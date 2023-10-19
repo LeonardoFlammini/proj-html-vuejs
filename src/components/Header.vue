@@ -1,5 +1,5 @@
 <script>
-import HeaderMenu from "./HeaderMenu.vue"
+import HeaderMenu from "./partials/HeaderMenu.vue"
 export default {
   name:"Header",
   components: {

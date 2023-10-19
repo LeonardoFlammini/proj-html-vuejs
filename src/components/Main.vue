@@ -1,14 +1,20 @@
 <script>
+import Jumbotron from "./partials/Jumbotron.vue"
 export default {
-  name:"Main"
+  name:"Main",
+  components:{
+    Jumbotron
+  }
 }
 </script>
 
 <template>
-  <div>main</div>
+  <main >
+    <Jumbotron class="jumbo-my" />
+  </main>
 </template>
 
 
-<style>
+<style scoped lang="scss">
 
 </style>

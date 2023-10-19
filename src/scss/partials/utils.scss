@@ -3,3 +3,26 @@
   background-color: rgba($color: #0e9953, $alpha: .4);
   border: 1px solid black;
 }
+.container-lf{
+  max-width: 1000px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+.bg-gray{
+  background-color: $primary-gray;
+}
+.jumbo-my{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.section-my{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.img-frame{
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}

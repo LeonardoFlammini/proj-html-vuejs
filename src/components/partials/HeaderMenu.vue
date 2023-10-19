@@ -1,5 +1,5 @@
 <script>
-import {store} from "../data/store"
+import {store} from "../../data/store"
 export default {
   name: "HeaderMenu",
   data(){
@@ -34,7 +34,7 @@ export default {
 
 
 <style scoped lang="scss">
-@use "../scss/partials/vars.scss" as *;
+@use "../../scss/partials/vars.scss" as *;
 .menu{
   color: $font-primary-color;
   ul{
