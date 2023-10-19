@@ -1,4 +1,6 @@
 @import "bootstrap/scss/bootstrap";
+// Supports weights 100-900
+@import '@fontsource-variable/lexend';
 @import "./partials/vars.scss";
 @import "./partials/general.scss";
 @import "./partials/utils.scss";
