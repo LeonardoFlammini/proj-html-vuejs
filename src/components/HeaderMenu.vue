@@ -11,8 +11,8 @@ export default {
 </script>
 
 <template>
-  <div class="d-flex align-items-center debug">
-    <ul class="d-flex debug">
+  <div class="d-flex align-items-center menu ">
+    <ul class="d-flex ">
       <li
         v-for="(item,index) in store.menuHeader"
         :key="index"
@@ -20,17 +20,24 @@ export default {
       {{ item }}
       <i class="fa-solid fa-chevron-down"></i>
       </li>
-      <div class="user-icon">
-        <i class="fa-regular fa-circle-user"></i>
-      </div>
-      <input type="text" class="form-control" placeholder="Search...">
     </ul>
+    <div class="user-icon">
+      <i class="fa-regular fa-circle-user"></i>
+    </div>
+    <div class="wrapper ">
+      <input type="text" class="search" placeholder="Search...">
+      <span><i class="fa-solid fa-magnifying-glass"></i></span>
+    </div>
+    
   </div>
 </template>
 
 
 <style scoped lang="scss">
-ul{
+@use "../scss/partials/vars.scss" as *;
+.menu{
+  color: $font-primary-color;
+  ul{
   list-style: none;
   margin-bottom: 0;
   li{
@@ -48,5 +55,25 @@ ul{
   margin: 0 15px;
   display: flex;
   align-items: center;
+}
+.wrapper{
+  display: flex;
+  align-items: center;
+  max-height: 100%;
+  padding: 2px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: $search-gray;
+  .search{
+    border: none;
+    background-color: $search-gray;
+    &:focus{
+      outline: none;
+    }
+  }
+  span{
+    color: $green;
+  }
+}
 }
 </style>
