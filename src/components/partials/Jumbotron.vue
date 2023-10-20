@@ -27,6 +27,10 @@ export default {
         </div>
         <div class="col col-7">
           <div class="image">
+            <img class="over" src="../../assets/images/maxcoach-shape-07.png" alt="">
+            <img class="over" src="" alt="">
+            <img class="over" src="" alt="">
+            <img class="over" src="" alt="">
             <div class="img-frame scaled">
               <img src="../../assets/images/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="about me">
             </div>
@@ -50,6 +54,7 @@ export default {
 
 <style scoped lang="scss">
 @use "../../scss/partials/vars.scss" as *;
+
 .col{
   display: flex;
   align-items: center;
@@ -72,6 +77,10 @@ export default {
 }
 .image{
   position: relative;
+  .over{
+    position: absolute;
+    z-index: -1;
+  }
   .scaled{
     width: 500px;
     height: 500px;
