@@ -1,9 +1,11 @@
 <script>
 import Jumbotron from "./partials/Jumbotron.vue"
+import Courses from "./partials/Courses.vue"
 export default {
   name:"Main",
   components:{
-    Jumbotron
+    Jumbotron,
+    Courses
   }
 }
 </script>
@@ -11,6 +13,7 @@ export default {
 <template>
   <main >
     <Jumbotron class="jumbo-my" />
+    <Courses class="section-my bg-gray" />
   </main>
 </template>
 
