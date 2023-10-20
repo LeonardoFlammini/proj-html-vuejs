@@ -60,11 +60,6 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  .btn.btn-success.green{
-    padding: 20px 30px;
-    background-color: $green;
-    border: none;
-  }
   div{
     a{
       color: $green;
