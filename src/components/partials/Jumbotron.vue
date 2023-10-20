@@ -1,12 +1,18 @@
 <script>
 export default {
-  name:"Jumbotron"
+  name:"Jumbotron",
+  methods:{
+    getImagePath(i){
+      return new URL (`../../assets/images/client-logo-0${i}.png`, import.meta.url).href;
+    }
+  }
 }
 </script>
 
 <template>
   <div class="container-lf">
     <div class="row">
+      <!-- CTA -->
       <div class="col col-5">
         <div class="cta-info">
           <h2>Distant learning for further expansion</h2>
@@ -26,18 +32,14 @@ export default {
         </div>
       </div>
     </div>
-    <div class="row row-cols-6">
-      <!-- <div
+    <!-- LOGOS -->
+    <div class="row row-cols-6 my-5" id="logos">
+      <div
         class="col"
         v-for="i in 6"
         :key="i"
-
       >
-        <img :src="`../../assets/images/client-logo-0${i}.png`" :alt="`logo${i}`">
-      </div> -->
-      <div class="col">
-        <img src="../../assets/images/client-logo-02.png" alt=""> 
-        <!-- FIXME: farlo dinamicamente -->
+        <img :src="getImagePath(i)" :alt="`logo${i}`">
       </div>
     </div>
 
@@ -78,5 +80,9 @@ export default {
     width: 500px;
     height: 500px;
   }
+}
+#logos{
+  max-height: 100px;
+  
 }
 </style>
