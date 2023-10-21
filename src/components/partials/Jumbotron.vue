@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <main>
+  <section>
     <div class="container-lf">
       <div class="row ">
         <!-- CTA -->
@@ -49,7 +49,7 @@ export default {
         </div>
       </div> 
     </div>
-  </main>
+  </section>
 </template>
 
 
