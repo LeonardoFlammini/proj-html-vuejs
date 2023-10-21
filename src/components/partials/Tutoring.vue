@@ -1,9 +1,11 @@
 <script>
 import SectionHeading from "./SectionHeading.vue"
+import FeaturesCol from "./FeaturesCol.vue"
 export default {
   name: "Tutoring",
   components:{
-    SectionHeading
+    SectionHeading,
+    FeaturesCol
   }
 
 }
@@ -17,6 +19,11 @@ export default {
       :title="`Access <span>smart tutoring</span> program for benefits`"
       :subTitle="'maxcoach available courses'"
       />
+      <div class="features row row-cols-3 my-5 p-3">
+        <FeaturesCol />
+        <FeaturesCol />
+        <FeaturesCol />
+      </div>
     </div>
   </section>
 </template>
