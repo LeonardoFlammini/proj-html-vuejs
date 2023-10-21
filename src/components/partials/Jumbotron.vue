@@ -12,7 +12,7 @@ export default {
 <template>
   <main>
     <div class="container-lf">
-      <div class="row">
+      <div class="row ">
         <!-- CTA -->
         <div class="col col-5">
           <div class="cta-info">
@@ -27,9 +27,10 @@ export default {
         </div>
         <div class="col col-7">
           <div class="image">
-            <img class="over" src="../../assets/images/maxcoach-shape-07.png" alt="">
-            <img class="over" src="" alt="">
-            <img class="over" src="" alt="">
+            <img class="over green-stars" src="../../assets/images/maxcoach-shape-07.png" alt="green-stars">
+            <img class="over gray-dots-1" src="../../assets/images/maxcoach-shape-08.png" alt="gray-dots">
+            <img class="over gray-dots-2" src="../../assets/images/maxcoach-shape-08.png" alt="gray-dots">
+            <img class="over blue-circle" src="../../assets/images/maxcoach-shape-02.png" alt="blue-circle">
             <img class="over" src="" alt="">
             <div class="img-frame scaled">
               <img src="../../assets/images/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="about me">
@@ -80,6 +81,25 @@ export default {
   .over{
     position: absolute;
     z-index: -1;
+  }
+  .green-stars{
+    bottom: 0;
+    left: 60%;
+  }
+  .gray-dots-1,
+  .gray-dots-2{
+    left: -10%;
+  }
+  .gray-dots-1{
+    top: 20%;
+  }
+  .gray-dots-2{
+    top: 50%;
+  }
+  .blue-circle{
+    z-index: 1;
+    top: 10%;
+    right: -20%;
   }
   .scaled{
     width: 500px;
