@@ -82,5 +82,25 @@ export const store = reactive({
       lessons: 14,
       students: 72
     },
+  ],
+  featuresArray: [
+    {
+      src:"home-2-image-box-01.png",
+      title: "customize preferences",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam architecto quas eos qui rem reprehenderit. Ipsa, corrupti unde molestiae iste soluta nulla temporibus iusto quidem eligendi explicabo beatae quae!",
+      aText: "start here"
+    },
+    {
+      src:"about-us-02-image-box-02.png",
+      title: "Cloud storage",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam architecto quas eos qui rem reprehenderit. Ipsa, corrupti unde molestiae iste soluta nulla temporibus iusto quidem eligendi explicabo beatae quae!",
+      aText: "get free quote"
+    },
+    {
+      src:"home-2-image-box-03.png",
+      title: "multimedia channels",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam architecto quas eos qui rem reprehenderit. Ipsa, corrupti unde molestiae iste soluta nulla temporibus iusto quidem eligendi explicabo beatae quae!",
+      aText: "start now"
+    },
   ]
 });

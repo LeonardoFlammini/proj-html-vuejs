@@ -68,11 +68,7 @@ export default {
   gap: 20px;
   div{
     a{
-      color: $green;
-      font-weight: bold;
-      i{
-        text-decoration: underline;
-      }
+      margin-left: 5px;
     }
   }
 }

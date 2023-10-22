@@ -7,3 +7,10 @@ body {
   font-family: $primary-font;
   color: $font-primary-color;
 }
+a{
+  color: $green;
+  font-weight: bold;
+  i{
+    text-decoration: underline;
+  }
+}
