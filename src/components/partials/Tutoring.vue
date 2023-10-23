@@ -37,6 +37,7 @@ export default {
         />
       </div>
       <CtaTutor
+      class="py-5"
       :text="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptas facere, tempore quam nemo vero?'" 
       :aTextHighlighted="'download free guide book'"
       />

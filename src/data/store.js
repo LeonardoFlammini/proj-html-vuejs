@@ -105,5 +105,31 @@ export const store = reactive({
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam architecto quas eos qui rem reprehenderit. Ipsa, corrupti unde molestiae iste soluta nulla temporibus iusto quidem eligendi explicabo beatae quae!",
       aText: "start now"
     },
+  ],
+  achievements:[
+    {
+      id: 1,
+      title: "successfully trained",
+      data: 1790,
+      achievement: "enrolled learners"
+    },
+    {
+      id: 2,
+      title: "proudly received",
+      data: 19,
+      achievement: "countrywide awards"
+    },
+    {
+      id: 3,
+      title: "firmly established",
+      data: 24,
+      achievement: "local branches"
+    },
+    {
+      id: 4,
+      title: "getting featured on",
+      data: 1090,
+      achievement: "blog posts"
+    }
   ]
 });
