@@ -153,19 +153,19 @@ export const store = reactive({
   learners:[
     {
       id:1,
-      name: "Mina Hollace",
+      name: "avicii",
       src: "testimonial-avata-01.jpg",
       role: "freelancer",
       text: 'gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue',
-      course: 'tortor vitae purus faucibus ornare suspendisse sed nisi'
+      course: ' faucibus ornare suspendisse sed nisi'
     },
     {
       id:2,
-      name: "Mina Hollace",
+      name: "franco battiato",
       src: "testimonial-avata-03.jpg",
       role: "freelancer",
       text: 'gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue',
-      course: 'tortor vitae purus faucibus ornare suspendisse sed nisi'
+      course: 'tortor vitaes ornare suspendisse sed nisi'
     },
     {
       id:3,

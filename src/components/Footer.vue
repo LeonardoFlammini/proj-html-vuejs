@@ -26,7 +26,7 @@ export default {
             <span><i class="fa-brands fa-x-twitter"></i></span>
           </div>
         </div>
-        <div class="col ">
+        <div class="col menus">
           <div class="row row-cols-3">
             <div class="col"
             v-for="menu in store.footerMenus"
@@ -72,6 +72,14 @@ export default {
     display: inline-block;
     margin: 0 10px;
   }
+  }
+  .menus{
+    nav{
+      ul{
+        list-style: none;
+        padding: 0;
+      }
+    }
   }
 }
 </style>

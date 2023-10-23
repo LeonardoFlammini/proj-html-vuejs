@@ -1,11 +1,19 @@
 <script>
 import SectionHeading from './SectionHeading.vue';
 import Slider from './Slider.vue';
+import SliderCard from './SliderCard.vue';
+import {store} from '../../data/store'
 export default {
   name: 'TopLearners',
+  data(){
+    return{
+      store
+    }
+  },
   components:{
     SectionHeading,
-    Slider
+    Slider,
+    SliderCard
   }
 
 }
@@ -19,12 +27,14 @@ export default {
       :subTitle="'great words about maxcoach'"
       class="py-3"
       />
-      
+      <Slider/>
     </div>
   </section>
 </template>
 
 
 <style scoped lang="scss">
-
+.container-lf{
+  padding: 70px;
+}
 </style>

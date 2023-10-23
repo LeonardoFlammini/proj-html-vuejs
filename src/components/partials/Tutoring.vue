@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-  <section>
+  <section class="section">
     <div class="container-lf">
       <!-- FIXME: fare in modo che lo span venga stilato -->
       <SectionHeading
@@ -54,8 +54,11 @@ export default {
 .section{
   position: relative;
   .wave{
+    width: 100%;
+    height: 200px;
     position: absolute;
-    bottom: 0;
+    z-index: 999;
+    bottom: -35px;
   }
 }
 
