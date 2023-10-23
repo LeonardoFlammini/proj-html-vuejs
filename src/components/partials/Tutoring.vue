@@ -12,7 +12,8 @@ export default {
   },
   data(){
     return{
-      store
+      store,
+      titleProp: 'Access <span class="highlighted">smart tutoring</span> program for benefits'
     }
   }
 }
@@ -23,7 +24,7 @@ export default {
     <div class="container-lf">
       <!-- FIXME: fare in modo che lo span venga stilato -->
       <SectionHeading
-      :title="`Access <span>smart tutoring</span> program for benefits`"
+      :title="titleProp"
       :subTitle="'maxcoach available courses'"
       />
       <div class="features row row-cols-3 my-5 p-3">
@@ -42,9 +43,9 @@ export default {
       :aTextHighlighted="'download free guide book'"
       />
     </div>
-    <div class="wave">
+    <!-- <div class="wave">
       <img src="../../assets/images/wave.svg" alt="wave">
-    </div>
+    </div> -->
   </section>
 </template>
 
@@ -55,7 +56,8 @@ export default {
   position: relative;
   .wave{
     width: 100%;
-    height: 200px;
+    max-height: 100px;
+    overflow: hidden;
     position: absolute;
     z-index: 999;
     bottom: -35px;

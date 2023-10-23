@@ -11,7 +11,7 @@ export default {
 <template>
   <div class="row row-cols-1 text-center title">
     <h6>{{ subTitle }}</h6>
-    <h3 v-html="title"></h3>
+    <h3 v-html="title" class="main-title"></h3>
   </div>
 </template>
 
@@ -25,7 +25,7 @@ export default {
     font-weight: 300;
     font-size: 12px;
   }
-  h3{
+  .main-title{
     text-transform: capitalize;
   }
   }

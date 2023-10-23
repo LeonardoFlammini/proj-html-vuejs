@@ -17,7 +17,7 @@ export default {
 
 <!-- FIXME: mettere le card tutte alla stessa altezza -->
 <template>
-  <div class="col d-flex align-items-center justify-content-center">
+  <div class="col d-flex justify-content-center">
     <div class="card-lf d-flex flex-column justify-content-between gap-2">
       <div class="image">
         <img :src="getImagePath(img)" :alt="img"> 

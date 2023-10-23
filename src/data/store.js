@@ -156,7 +156,7 @@ export const store = reactive({
       name: "avicii",
       src: "testimonial-avata-01.jpg",
       role: "freelancer",
-      text: 'gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue',
+      text: 'gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagitturis nunc congue',
       course: ' faucibus ornare suspendisse sed nisi'
     },
     {
@@ -172,7 +172,7 @@ export const store = reactive({
       name: "Mina Hollace",
       src: "testimonial-avata-02.jpg",
       role: "freelancer",
-      text: 'gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue',
+      text: 'gravida quis batea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue',
       course: 'tortor vitae purus faucibus ornare suspendisse sed nisi'
     },
   ],

@@ -7,7 +7,8 @@ export default {
   name: 'TopLearners',
   data(){
     return{
-      store
+      store,
+      titleProp: 'Our top <span class="highlighted">learner\'s</span>  verbatim'
     }
   },
   components:{
@@ -23,7 +24,7 @@ export default {
   <section>
     <div class="container-lf">
       <SectionHeading
-      :title="'Our top learner\'s verbatim'"
+      :title="titleProp"
       :subTitle="'great words about maxcoach'"
       class="py-3"
       />
