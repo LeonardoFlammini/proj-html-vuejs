@@ -1,13 +1,18 @@
 <script>
 import SectionHeading from "./SectionHeading.vue"
 import FeaturesCol from "./FeaturesCol.vue"
+import {store} from "../../data/store"
 export default {
   name: "Tutoring",
   components:{
     SectionHeading,
     FeaturesCol
+  },
+  data(){
+    return{
+      store
+    }
   }
-
 }
 </script>
 
@@ -20,9 +25,14 @@ export default {
       :subTitle="'maxcoach available courses'"
       />
       <div class="features row row-cols-3 my-5 p-3">
-        <FeaturesCol />
-        <FeaturesCol />
-        <FeaturesCol />
+        <FeaturesCol
+        v-for="item in store.featuresArray"
+        :key="item.id"
+        :title="item.title"
+        :img="item.src"
+        :text="item.text"
+        :aText="item.aText"
+        />
       </div>
     </div>
   </section>

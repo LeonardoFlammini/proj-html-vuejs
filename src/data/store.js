@@ -85,18 +85,21 @@ export const store = reactive({
   ],
   featuresArray: [
     {
+      id:1,
       src:"home-2-image-box-01.png",
       title: "customize preferences",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam architecto quas eos qui rem reprehenderit. Ipsa, corrupti unde molestiae iste soluta nulla temporibus iusto quidem eligendi explicabo beatae quae!",
       aText: "start here"
     },
     {
+      id:2,
       src:"about-us-02-image-box-02.png",
       title: "Cloud storage",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam architecto quas eos qui rem reprehenderit. Ipsa, corrupti unde molestiae iste soluta nulla temporibus iusto quidem eligendi explicabo beatae quae!",
       aText: "get free quote"
     },
     {
+      id:3,
       src:"home-2-image-box-03.png",
       title: "multimedia channels",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam architecto quas eos qui rem reprehenderit. Ipsa, corrupti unde molestiae iste soluta nulla temporibus iusto quidem eligendi explicabo beatae quae!",
