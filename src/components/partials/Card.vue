@@ -5,9 +5,8 @@ export default {
     cardObj: Object
   },
   methods:{
-    getImagePath(){
-      return new URL (`../../assets/images/${this.cardObj.src}`, import.meta.url).href;
-      // FIXME: capire perché non trova immagine
+    getImagePath(img){
+      return new URL (`../../assets/images/${img}`, import.meta.url).href;
     }
   }
 }
@@ -17,7 +16,7 @@ export default {
   <div class="col">
     <div class="card-lf ">
       <div class="img-frame">
-        <img :src="getImagePath" :alt="`${cardObj.src}`">
+        <img :src="getImagePath(cardObj.src)" :alt="`${cardObj.src}`">
       </div>
       <div class="course-info d-flex flex-column justify-content-between">
         <div v-if="cardObj.price.isFree" class="free">Free</div>

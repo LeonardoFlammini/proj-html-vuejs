@@ -6,16 +6,21 @@ export default {
     img: String,
     text: String,
     aText: String
+  },
+  methods:{
+    getImagePath(img){
+      return new URL (`../../assets/images/${img}`, import.meta.url).href;
+    }
   }
 }
 </script>
 
-<!-- FIXME: capire perché non stampa immagini -->
+<!-- FIXME: mettere le card tutte alla stessa altezza -->
 <template>
   <div class="col d-flex align-items-center justify-content-center">
-    <div class="card-lf d-flex flex-column gap-2">
+    <div class="card-lf d-flex flex-column justify-content-between gap-2">
       <div class="image">
-        <img :src="`../../assets/images/${img}`" :alt="img"> 
+        <img :src="getImagePath(img)" :alt="img"> 
       </div>
       <h4>{{title}}</h4>
       <p>{{ text }}</p>
@@ -31,6 +36,7 @@ export default {
 <style scoped lang="scss">
 .col{
   .card-lf{
+    
     width: 80%;
     max-width: 300px;
     img{
