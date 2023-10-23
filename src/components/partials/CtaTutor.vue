@@ -80,12 +80,12 @@ export default {
     top: 20%;
   }
   .gray-dots-2{
-    top: 50%;
+    top: 60%;
   }
   .blue-circle{
     z-index: 1;
     top: -10%;
-    right: -20%;
+    right: -10%;
   }
   .scaled{
     width: 500px;

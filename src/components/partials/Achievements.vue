@@ -37,9 +37,9 @@ export default {
 .row{
   height: 300px;
   .col{
-    border-left: 3px solid $primary-gray;
+    border-left: 3px solid $weat;
     &:last-child{
-      border-right: 3px solid $primary-gray;
+      border-right: 3px solid $weat;
     }
   }
   .card-lf{
@@ -57,7 +57,7 @@ export default {
     .achievement{
       text-transform: uppercase;
       font-size: 14px;
-      color: gray;
+      color: $dark-gray;
       //TODO: mettere in palette
       font-weight: 300;
     }

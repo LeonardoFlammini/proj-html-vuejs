@@ -17,7 +17,7 @@ export default {
         v-for="(item,index) in store.menuHeader"
         :key="index"
       >
-      {{ item }}
+      <span>{{ item }}</span>
       <i class="fa-solid fa-chevron-down"></i>
       </li>
     </ul>
@@ -45,7 +45,7 @@ export default {
     align-items: center;
     margin: 0 5px;
     text-transform: capitalize;
-    // font-size: 0.8rem;
+    cursor: pointer;
     i{
       font-size: 0.5rem;
     }
@@ -55,6 +55,7 @@ export default {
   margin: 0 15px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .wrapper{
   display: flex;
@@ -72,6 +73,7 @@ export default {
     }
   }
   span{
+    cursor: pointer;
     color: $green;
   }
 }
