@@ -42,11 +42,21 @@ export default {
       :aTextHighlighted="'download free guide book'"
       />
     </div>
+    <div class="wave">
+      <img src="../../assets/images/wave.svg" alt="wave">
+    </div>
   </section>
 </template>
 
 
 <style scoped lang="scss">
 @use "../../scss/partials/vars.scss" as *;
+.section{
+  position: relative;
+  .wave{
+    position: absolute;
+    bottom: 0;
+  }
+}
 
 </style>

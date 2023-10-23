@@ -19,7 +19,7 @@ export default {
     <Jumbotron class="jumbo-my" />
     <Courses class="section-my bg-gray" />
     <Tutoring />
-    <Achievements class="py-5" />
+    <Achievements  />
   </main>
 </template>
 

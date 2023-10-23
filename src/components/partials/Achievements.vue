@@ -15,7 +15,7 @@ export default {
   <section>
     <div class="container-lf">
       <div class="row row-cols-4">
-        <div class="col"
+        <div class="col d-flex align-items-center justify-content-center"
         v-for="item in store.achievements"
         :key="item.id"
         >
@@ -35,7 +35,7 @@ export default {
 @use "../../scss/partials/vars.scss" as *;
 
 .row{
-  max-height: 400px;
+  height: 300px;
   .col{
     border-left: 3px solid $primary-gray;
     &:last-child{
