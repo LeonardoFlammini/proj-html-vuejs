@@ -1,35 +1,44 @@
 <script>
+import SectionHeading from "./SectionHeading.vue";
 export default {
-  name: "Cta"
+  name: "CtaTutor",
+  props:{
+    text: String,
+    aTextHighlighted: String
+  },
+  components:{
+    SectionHeading
+  }
 }
 </script>
 
 <template>
   <div class="row ">
-    <!-- CTA -->
-    <div class="col col-5">
-      <div class="cta-info">
-        <h2>Distant learning for further expansion</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptas facere, tempore quam nemo vero?</p>
-        <button class="btn btn-success green">
-          <i class="fa-solid fa-download"></i>
-          Download free guide
-        </button>
-        <div>Have questions?<a href="#">Get Free Sample <i class="fa-solid fa-arrow-right"></i> </a></div>
-      </div>
-    </div>
     <div class="col col-7">
       <div class="image">
         <img class="over green-stars" src="../../assets/images/maxcoach-shape-07.png" alt="green-stars">
         <img class="over gray-dots-1" src="../../assets/images/maxcoach-shape-08.png" alt="gray-dots">
         <img class="over gray-dots-2" src="../../assets/images/maxcoach-shape-08.png" alt="gray-dots">
         <img class="over blue-circle" src="../../assets/images/maxcoach-shape-02.png" alt="blue-circle">
-        <img class="over" src="" alt="">
-        <div class="img-frame scaled">
-          <img src="../../assets/images/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="about me">
+        <img class="over yt" src="../../assets/images/icon-youtube-play.png" alt="youtube">
+        <div class="image">
+          <img src="../../assets/images/home-2-popup-video-poster.jpg" alt="about me">
         </div>
       </div>
     </div>
+    <div class="col col-5">
+      <div class="cta-info">
+        <!-- TODO: highlight companionship -->
+        <SectionHeading 
+        :title="'Enjoy our companionship'"
+        :subTitle="'get started effortlessly'"
+        />
+        <p>{{ text }}</p>
+        
+        <div>{{ aTextSimple }}<a href="#">{{ aTextHighlighted }} <i class="fa-solid fa-arrow-right"></i> </a></div>
+      </div>
+    </div>
+    
   </div>
 </template>
 
@@ -47,12 +56,14 @@ export default {
   gap: 20px;
   div{
     a{
+      text-transform: capitalize;
       margin-left: 5px;
     }
   }
 }
 .image{
   position: relative;
+  margin-right: 20px;
   .over{
     position: absolute;
     z-index: -1;
@@ -73,12 +84,19 @@ export default {
   }
   .blue-circle{
     z-index: 1;
-    top: 10%;
+    top: -10%;
     right: -20%;
   }
   .scaled{
     width: 500px;
     height: 500px;
+  }
+  .yt{
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
   }
 }
 </style>

@@ -1,12 +1,14 @@
 <script>
 import SectionHeading from "./SectionHeading.vue"
+import CtaTutor from "./CtaTutor.vue"
 import FeaturesCol from "./FeaturesCol.vue"
 import {store} from "../../data/store"
 export default {
   name: "Tutoring",
   components:{
     SectionHeading,
-    FeaturesCol
+    FeaturesCol,
+    CtaTutor
   },
   data(){
     return{
@@ -34,6 +36,10 @@ export default {
         :aText="item.aText"
         />
       </div>
+      <CtaTutor
+      :text="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptas facere, tempore quam nemo vero?'" 
+      :aTextHighlighted="'download free guide book'"
+      />
     </div>
   </section>
 </template>
