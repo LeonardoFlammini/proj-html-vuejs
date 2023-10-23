@@ -131,5 +131,23 @@ export const store = reactive({
       data: 1090,
       achievement: "blog posts"
     }
+  ],
+  mostViewed:[
+    {
+      id:1,
+      src: 'artist-blog-03-480x352.jpeg',
+      title: "brush strokes energize trees in paintings",
+      genre: 'artist',
+      date: 'May 15, 2020',
+      views: 688
+    },
+    {
+      id:1,
+      src: 'artist-blog-01-480x352.jpg',
+      title: "pocket sized notebooks hold miniature paintings",
+      genre: 'artist',
+      date: 'May 15, 2020',
+      views: 603
+    },
   ]
 });
