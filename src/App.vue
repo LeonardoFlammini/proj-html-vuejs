@@ -2,6 +2,7 @@
 import Header from "./components/Header.vue"
 import Main from "./components/Main.vue"
 import Footer from "./components/Footer.vue"
+import Swiper from 'swiper';
 
 export default {
   name: "App",
@@ -9,6 +10,11 @@ export default {
     Header,
     Main,
     Footer
+  },
+  data(){
+    return{
+      Swiper
+    }
   }
 }
 </script>
@@ -16,7 +22,7 @@ export default {
 <template>
   <Header />
   <Main />
-  <Footer />
+  <Footer class="bg-footer" />
 </template>
 
 

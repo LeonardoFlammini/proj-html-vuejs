@@ -1,11 +1,15 @@
 <script>
 import {store} from "../../data/store"
+import SearchWrapper from "./SearchWrapper.vue";
 export default {
   name: "HeaderMenu",
   data(){
     return{
       store
     }
+  },
+  components:{
+    SearchWrapper
   }
 }
 </script>
@@ -24,10 +28,7 @@ export default {
     <div class="user-icon">
       <i class="fa-regular fa-circle-user"></i>
     </div>
-    <div class="wrapper ">
-      <input type="text" class="search" placeholder="Search...">
-      <span><i class="fa-solid fa-magnifying-glass"></i></span>
-    </div>
+    <SearchWrapper />
     
   </div>
 </template>

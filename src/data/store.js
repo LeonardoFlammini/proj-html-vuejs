@@ -149,5 +149,61 @@ export const store = reactive({
       date: 'May 15, 2020',
       views: 603
     },
+  ],
+  learners:[
+    {
+      id:1,
+      name: "Mina Hollace",
+      src: "testimonial-avata-01.jpg",
+      role: "freelancer",
+      text: 'gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue',
+      course: 'tortor vitae purus faucibus ornare suspendisse sed nisi'
+    },
+    {
+      id:2,
+      name: "Mina Hollace",
+      src: "testimonial-avata-03.jpg",
+      role: "freelancer",
+      text: 'gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue',
+      course: 'tortor vitae purus faucibus ornare suspendisse sed nisi'
+    },
+    {
+      id:3,
+      name: "Mina Hollace",
+      src: "testimonial-avata-02.jpg",
+      role: "freelancer",
+      text: 'gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue',
+      course: 'tortor vitae purus faucibus ornare suspendisse sed nisi'
+    },
+  ],
+  footerMenus:[
+    {
+      id:1,
+      title: "explore",
+      voices:[
+        'start here',
+        'blog',
+        'about us'
+      ]
+    },
+    {
+      id:2,
+      title: "",
+      voices:[
+        'success story',
+        'courses',
+        'contact us'
+      ]
+    },
+    {
+      id:3,
+      title: "information",
+      voices:[
+        'membership',
+        'purchase',
+        'about us',
+        'voices'
+      ]
+    },
   ]
 });

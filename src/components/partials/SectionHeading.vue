@@ -20,14 +20,13 @@ export default {
 @use "../../scss/partials/vars.scss" as *;
 
 .title{
-    margin-top: 50px;
-    h6{
-      text-transform: uppercase;
-      font-weight: 300;
-      font-size: 12px;
-    }
-    h3{
-      text-transform: capitalize;
-    }
+  h6{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 12px;
+  }
+  h3{
+    text-transform: capitalize;
+  }
   }
 </style>

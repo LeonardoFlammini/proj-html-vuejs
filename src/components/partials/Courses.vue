@@ -44,6 +44,7 @@ export default {
 <style scoped lang="scss">
 @use "../../scss/partials/vars.scss" as *;
 .container-lf{
+      padding-top: 50px;
   .cards{
     width: 100%;
   }
